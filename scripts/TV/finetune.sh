@@ -1,0 +1,24 @@
+job_name='finetune-twoview'
+python ../../main_scope.py \
+--data_name twoview_cxr \
+--version "${job_name}" \
+--task "finetune" \
+--ann_path "" \
+--view_position_embed "" \
+--images_dir "" \
+--max_length 100 \
+--is_save_checkpoint "yes" \
+--is_multiview_learning "yes" \
+--is_prior_scan "yes" \
+--using_mpc_loss "no" \
+--report_style "factual_serialization" \
+--is_indication "yes" \
+--is_prior_report "yes" \
+--ckpt_zoo_dir "" \
+--load "" \
+--cvt2distilgpt2_path "" \
+--ft_lr 1.0e-6 \
+--monitor_metric "RCB" \
+--epochs 20 \
+--num_workers 8 \
+--batch_size 1
