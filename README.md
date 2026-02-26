@@ -12,6 +12,17 @@
 ---
 
 
+SCOPE is a visually grounded radiology report generation framework designed to enforce genuine visual reasoning in medical vision–language models.
+
+It integrates:
+
+- **SCPR** — Self-Consistent Patch Reconstruction  
+- **PAPA** — Pathology-Aware Prototype Alignment  
+
+SCOPE improves clinical correctness while ensuring sensitivity to pathological regions rather than relying on language priors.
+
+---
+
 ## Requirements
 
 ```bash
@@ -62,7 +73,6 @@ files/
 - IU-Xray: iu_xray.json
 - View Position for all datasets: five_work_mimic_cxr_view_position_v1.1.json
 
-
 ## Training
 
 **1. Download checkpoints for architecture and metrics.**
@@ -100,4 +110,23 @@ bash finetune.sh
 ```
 cd scripts/CXR
 bash test.sh
-`` -->
+```
+
+## 📚 Documentation & Additional Resources
+
+For detailed descriptions of the model components, training procedures, and experimental results, please refer to the following resources:
+
+- 🧠 **Prototype Formulation & Model Architecture**  
+  See [`Implementation`](models/implementation/Implementation.md)
+
+- 🎭 **Masking Strategy (Random & Anatomical-Specific Masking)**  
+  See [`Masking`](models/implementation/Masking.md)
+
+- 🚀 **Training Guide & Hyperparameter Details**  
+  See [`Training Guide`](scripts/training/Training.md)
+
+- 📊 **Experimental Results (Quantitative Analysis)**  
+  See [`Experiments`](scripts/experiment/Experiments.md)
+
+- 🖼 **Qualitative Results & Visual Examples**  
+  See [`Qualitative Results`](assets/qualitative.jpg)
