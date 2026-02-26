@@ -6,7 +6,7 @@ Implementation details for Experiment Settings of the main paper.
 
 ## Prototype Formulation
 
-This details the prototype formulation procedure described in Section 3.3 (PAPA) of the main paper.
+This details the prototype formulation procedure described in Section 3 (PAPA) of the main paper.
 
 We define a set of $K$ pathology prototypes:
 

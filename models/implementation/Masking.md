@@ -4,7 +4,7 @@
 
 ## Training: Random Masking
 
-During pre-training with SCPR (Section 3.2), we use random patch masking to encourage spatially consistent representations.
+During pre-training with SCPR (Section 3), we use random patch masking to encourage spatially consistent representations.
 
 We divide the input image into:
 
@@ -113,7 +113,7 @@ Random masking prevents the model from exploiting spatial biases and ensures rob
 
 ## Inference: Anatomical-Specific Masking
 
-For evaluation experiments (Section 4.5), we employ targeted masking to assess whether models genuinely rely on visual information.
+For evaluation experiments (Section 4), we employ targeted masking to assess whether models genuinely rely on visual information.
 
 We utilize the **EYEGAZE dataset**, which provides radiologist gaze-based annotations indicating anatomical regions for 1,083 chest X-ray images.
 

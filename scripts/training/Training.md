@@ -1,6 +1,6 @@
 ## Additional Architectural Details
 
-This section expands on the model architecture specifications briefly mentioned in Section 4.2 (Implementation Details) of the main paper, providing complete architectural specifications for all components.
+This section expands on the model architecture specifications briefly mentioned in Section 4 (Implementation Details) of the main paper, providing complete architectural specifications for all components.
 
 ### Model Specifications
 
@@ -67,7 +67,7 @@ The report generator uses **DistilGPT2** with:
 
 ## Training Details
 
-This section provides complete training hyperparameters and schedules that extend the brief description in Section 4.2 of the main paper.
+This section provides complete training hyperparameters and schedules that extend the brief description in Section 4 of the main paper.
 
 ---
 
@@ -91,7 +91,7 @@ Training schedule:
 
 ### PAPA Hyperparameters
 
-For the optimal transport assignment in Section 3.3, we use:
+For the optimal transport assignment in Section 3, we use:
 
 - Sinkhorn iterations:
   $$
