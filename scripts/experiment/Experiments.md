@@ -17,7 +17,7 @@ $$
 $$
 
 $$
-p_k = \frac{\#\ \text{matched } k\text{-grams}}{\#\ k\text{-grams in } p}
+p_k = \frac{\text{Number of } \text{matched } k\text{-grams}}{\text{Number of } k\text{-grams in } p}
 $$
 
 $$
